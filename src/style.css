@@ -1,0 +1,105 @@
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato-400";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("./assets/fonts/lato-v23-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./assets/fonts/lato-v23-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-italic - latin */
+@font-face {
+  font-family: "Lato-italic";
+  font-style: italic;
+  font-weight: 400;
+  src: local(""),
+    url("./assets/fonts/lato-v23-latin-italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./assets/fonts/lato-v23-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: "Lato-700";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("./assets/fonts/lato-v23-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("./assets/fonts/lato-v23-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --main-bg-color: #0086c18f;
+  --text-product-color: #553c9a;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato-400";
+}
+
+h1,
+h2 {
+  font-family: "Lato-700";
+  background-image: radial-gradient(#553c9a, var(--main-bg-color));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+#about {
+  background: url("./assets/main-photo/uzmanlar-small.png") no-repeat;
+  background-position: 100% 0;
+  background-size: contain;
+  height: 1100px;
+}
+
+.block {
+  padding-top: 100px;
+}
+
+.block__text {
+  font-size: 20px;
+  background-image: linear-gradient(
+    45deg,
+    var(--main-bg-color),
+    transparent 60%,
+    transparent
+  );
+}
+
+.carousel-item {
+  height: 350px;
+}
+
+.carousel-item-img {
+  border-radius: 5px;
+}
+
+.products__header {
+  font-size: 25px;
+  padding: 15px;
+  border-bottom: 1px solid var(--main-bg-color);
+}
+.products__item {
+  background-image: linear-gradient(
+    -20deg,
+    var(--main-bg-color),
+    transparent 70%,
+    transparent
+  );
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.bg-odd-item {
+  background-image: linear-gradient(
+    -20deg,
+    rgba(137, 43, 226, 0.184),
+    transparent 50%,
+    transparent
+  );
+}
