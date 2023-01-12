@@ -350,6 +350,12 @@ h2 {
     padding: 0;
   }
 
+  .products__link {
+    font-size: 14px;
+    height: 32px;
+    padding: 8px 28px;
+  }
+
   .shaped {
     shape-outside: polygon(86% 0, 100% 0, 100% 100%, 27% 100%);
   }
