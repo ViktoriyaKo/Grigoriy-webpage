@@ -412,7 +412,7 @@ h2 {
 
   .shaped {
     height: 570px;
-    shape-outside: polygon(127% 0, 100% 0, 100% 100%, 27% 100%);
+    shape-outside: polygon(122% 0, 100% 0, 100% 100%, 27% 100%);
   }
 
   .kits__img {
