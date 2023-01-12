@@ -81,7 +81,6 @@ function translateInterface(language) {
 document.querySelector(".block__lang").addEventListener("click", (event) => {
   const value = event.target.value;
   if (event.target.closest(".btn-test")) {
-    console.log(value);
     translateInterface(value);
     localStorage.setItem("selectLanguages", value);
     changeFiles(value);
@@ -98,7 +97,6 @@ document.querySelector(".block__lang").addEventListener("click", (event) => {
 
 function changeFiles(value) {
   document.querySelectorAll(".products__link").forEach((item) => {
-    console.log(item.href.includes("pl"));
     if (item.href.includes("pl")) {
       item.href = item.href.replace("pl", value);
     } else {
