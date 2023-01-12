@@ -201,8 +201,8 @@ h2 {
 
 /* link pdf */
 .products__link {
-  width: 230px;
-  height: 40px;
+  font-size: 15px;
+  width: 237px;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -248,6 +248,17 @@ h2 {
     inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
 }
 /* link pdf */
+
+/* drop */
+.dropdown {
+  color: gray;
+}
+.dropdown:hover {
+  color: black;
+}
+.dropdown-menu {
+  min-width: 60px;
+}
 .footer__icon {
   transition: 0.5s;
 }

@@ -4,7 +4,8 @@ strings.en = {
     "BORVEK was founded in 2004. The company produces mobile boring machines with a welding function for the regeneration of damaged metal holes by boring and welding at the accident site. The main advantage of BORVEK products is the servo drive, thanks to which the machines do not require servicing. The factory is located in Turkey, in the city of Antalya. All devices have European Union certificates. The company's clients include such well-known companies as: CATERPILLAR, LIIEBHERR, JOHN DEERE, HIDROMEK, DOOSAN. BORVEK equipment is sold on 5 continents. All machines are covered by a 2-year warranty!",
   about: "About us",
   products: "Products",
-  kits: "Accessories/KIT",
+  kits1: "Accessories/KIT",
+  kits2: "Accessories",
   contacts: "Contact us",
   productsHeader1: "BM-40",
   productsHeaderText1:
@@ -24,6 +25,8 @@ strings.en = {
   productsHeaderText7:
     "The kit has been designed to give great versatility of use to the portable boring mashines of the BM (Boring Mashine) series. It consust in a facing head allowing turning operations on orthogonal planes and the creation of seats for seeger circlips and o-rings, by using standart cutting-edges from diameter 48mm to 600 mm",
   presentation: "Download PDF presentation",
+  contactsDetails: "Contact us",
+  language: "Lang",
 };
 
 strings.pl = {
@@ -31,7 +34,8 @@ strings.pl = {
     "Firma BORVEK została założona w 2004 roku. Firma produkuje mobilne wytaczarki z funkcją spawania do regeneracji uszkodzonych otworów metalowych metodą wytaczania i spawania na miejscu wypadku. Główną zaletą produktów BORVEK jest serwonapęd, dzięki któremu maszyny nie wymagają serwisowania. Fabryka znajduje się w Turcji, w mieście Antalya. Wszystkie urządzenia posiadają certyfikaty Unii Europejskiej. Klientami firmy są tak znane firmy jak: strong CATERPILLAR, LIIEBHERR, JOHN DEERE, HIDROMEK, DOOSAN. Sprzęt BORVEK sprzedawany jest na 5 kontynentach. Wszystkie maszyny objęte są 2-letnią gwarancją!",
   about: "O nas",
   products: "Produkty",
-  kits: "Akcesoria",
+  kits1: "Akcesoria",
+  kits2: "Akcesoria",
   contacts: "Kontakt",
   productsHeader1: "MOBILNA WYTACZARKA Z FUNKCJĄ SPAWANIA BM-40",
   productsHeaderText1:
@@ -53,13 +57,13 @@ strings.pl = {
   productsHeaderText7:
     "Zestaw został zaprojektowany tak, aby zapewnić większą wszechstronność zastosowania przenośnych wytaczarek serii BM (Boring Mashine). Składa się z głowicy czołowej, która umożliwia wykonywanie operacji toczenia w płaszczyznach ortogonalnych i tworzenie gniazd dla pierścieni blokujących i O-ringów przy użyciu standardowych krawędzi tnących o średnicy od 48 mm do 600 mm",
   presentation: "Pobierz prezentację PDF",
+  contactsDetails: "Nasze kontakty",
+  language: "Język",
 };
 
 function getString(lang, key) {
   if (strings[lang].hasOwnProperty(key)) {
     return strings[lang][key];
-  } else {
-    return key;
   }
 }
 
@@ -67,7 +71,6 @@ function translateInterface(language) {
   const stringsPlace = document.querySelectorAll("[data-translate]");
 
   for (const string of stringsPlace) {
-    console.log(language, string.getAttribute("data-translate"));
     string.innerHTML = getString(
       language,
       string.getAttribute("data-translate")
@@ -75,10 +78,31 @@ function translateInterface(language) {
   }
 }
 
-document.querySelector(".btn-test").addEventListener("click", () => {
-  translateInterface("en");
+document.querySelector(".block__lang").addEventListener("click", (event) => {
+  const value = event.target.value;
+  if (event.target.closest(".btn-test")) {
+    console.log(value);
+    translateInterface(value);
+    localStorage.setItem("selectLanguages", value);
+    changeFiles(value);
+  }
 });
 
-// .products__link {
-//     width: 250px;
-// }
+(function currentLang() {
+  if (localStorage.getItem("selectLanguages")) {
+    const value = localStorage.getItem("selectLanguages");
+    translateInterface(value);
+    changeFiles(value);
+  }
+})();
+
+function changeFiles(value) {
+  document.querySelectorAll(".products__link").forEach((item) => {
+    console.log(item.href.includes("pl"));
+    if (item.href.includes("pl")) {
+      item.href = item.href.replace("pl", value);
+    } else {
+      item.href = item.href.replace("en", value);
+    }
+  });
+}
