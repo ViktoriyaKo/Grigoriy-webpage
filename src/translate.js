@@ -34,7 +34,7 @@ strings.pl = {
     "Firma BORVEK została założona w 2004 roku. Firma produkuje mobilne wytaczarki z funkcją spawania do regeneracji uszkodzonych otworów metalowych metodą wytaczania i spawania na miejscu wypadku. Główną zaletą produktów BORVEK jest serwonapęd, dzięki któremu maszyny nie wymagają serwisowania. Fabryka znajduje się w Turcji, w mieście Antalya. Wszystkie urządzenia posiadają certyfikaty Unii Europejskiej. Klientami firmy są tak znane firmy jak: strong CATERPILLAR, LIIEBHERR, JOHN DEERE, HIDROMEK, DOOSAN. Sprzęt BORVEK sprzedawany jest na 5 kontynentach. Wszystkie maszyny objęte są 2-letnią gwarancją!",
   about: "O nas",
   products: "Produkty",
-  kits1: "Akcesoria",
+  kits1: "Akcesoria/Kity",
   kits2: "Akcesoria",
   contacts: "Kontakt",
   productsHeader1: "MOBILNA WYTACZARKA Z FUNKCJĄ SPAWANIA BM-40",
@@ -81,7 +81,6 @@ function translateInterface(language) {
 document.querySelector(".block__lang").addEventListener("click", (event) => {
   const value = event.target.value;
   if (event.target.closest(".btn-test")) {
-    console.log(value);
     translateInterface(value);
     localStorage.setItem("selectLanguages", value);
     changeFiles(value);
@@ -98,7 +97,6 @@ document.querySelector(".block__lang").addEventListener("click", (event) => {
 
 function changeFiles(value) {
   document.querySelectorAll(".products__link").forEach((item) => {
-    console.log(item.href.includes("pl"));
     if (item.href.includes("pl")) {
       item.href = item.href.replace("pl", value);
     } else {
