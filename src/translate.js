@@ -27,6 +27,7 @@ strings.en = {
   presentation: "Download PDF presentation",
   contactsDetails: "Contact us",
   language: "Lang",
+  address: "31-207, ul. Księdza Kazimierza Siemaszki, Krakow, Poland",
 };
 
 strings.pl = {
@@ -59,6 +60,7 @@ strings.pl = {
   presentation: "Pobierz prezentację PDF",
   contactsDetails: "Nasze kontakty",
   language: "Język",
+  address: "31-207, ul. Księdza Kazimierza Siemaszki 26/9, Kraków, Polska",
 };
 
 function getString(lang, key) {
