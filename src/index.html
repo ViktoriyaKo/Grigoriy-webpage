@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="borvek" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -213,6 +214,115 @@
                 class="products__link"
                 >Pobierz prezentację PDF</a
               >
+              <a
+                type="button"
+                class="products__link set-btn text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-translate="showModal"
+              >
+                Prześlij swoją aplikację
+              </a>
+              <!-- modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2
+                        class="modal-title fs-5 text-uppercase"
+                        data-translate="fillForm"
+                        id="exampleModalLabel"
+                      >
+                        wypełnić formularz
+                      </h2>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form
+                        action="https://formspree.io/f/mqkoaaap"
+                        method="POST"
+                      >
+                        <div class="mb-3">
+                          <label
+                            for="name"
+                            data-translate="enterName"
+                            class="col-form-label"
+                            >Wpisz swoje imię:</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            name="name"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label
+                            for="telephone"
+                            data-translate="enterTel"
+                            class="col-form-label"
+                            >Numer telefonu:</label
+                          >
+                          <input
+                            type="telephone"
+                            class="form-control"
+                            id="name"
+                            name="tel"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="col-form-label"
+                            >Email:</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label
+                            for="message-text"
+                            data-translate="enterComments"
+                            class="col-form-label"
+                          >
+                            Zostaw komentarze:</label
+                          >
+                          <textarea
+                            class="form-control"
+                            id="message-text"
+                            name="message"
+                          ></textarea>
+                        </div>
+                        <button
+                          id="my-form-button"
+                          type="submit"
+                          data-translate="send"
+                          class="btn btn-primary"
+                        >
+                          Wysłać
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- modal -->
             </div>
           </div>
 
@@ -295,6 +405,15 @@
                 class="products__link"
                 >Pobierz prezentację PDF</a
               >
+              <a
+                type="button"
+                class="products__link set-btn text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-translate="showModal"
+              >
+                Prześlij swoją aplikację
+              </a>
             </div>
           </div>
 
@@ -378,6 +497,15 @@
                 class="products__link"
                 >Pobierz prezentację PDF</a
               >
+              <a
+                type="button"
+                class="products__link set-btn text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-translate="showModal"
+              >
+                Prześlij swoją aplikację
+              </a>
             </div>
           </div>
         </div>
@@ -415,6 +543,15 @@
                 class="products__link"
                 >Pobierz prezentację PDF</a
               >
+              <a
+                type="button"
+                class="products__link set-btn text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-translate="showModal"
+              >
+                Prześlij swoją aplikację
+              </a>
             </div>
           </div>
           <!-- product2 -->
@@ -442,6 +579,15 @@
                 class="products__link"
                 >Pobierz prezentację PDF</a
               >
+              <a
+                type="button"
+                class="products__link set-btn text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-translate="showModal"
+              >
+                Prześlij swoją aplikację
+              </a>
             </div>
           </div>
           <!-- product3 -->
@@ -477,6 +623,15 @@
                 class="products__link"
                 >Pobierz prezentację PDF</a
               >
+              <a
+                type="button"
+                class="products__link set-btn text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-translate="showModal"
+              >
+                Prześlij swoją aplikację
+              </a>
             </div>
           </div>
           <!-- product4 -->
@@ -512,6 +667,15 @@
                 class="products__link"
                 >Pobierz prezentację PDF</a
               >
+              <a
+                type="button"
+                class="products__link set-btn text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-translate="showModal"
+              >
+                Prześlij swoją aplikację
+              </a>
             </div>
           </div>
         </div>
@@ -539,7 +703,7 @@
               /></a>
               <a href="tel:+48536786039"
                 ><img
-                  src="./assets/svg/icons8-телеграмма-app-64.png"
+                  src="./assets/svg/icons8-tg.png"
                   class="footer__icon"
                   alt="icon"
               /></a>

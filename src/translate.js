@@ -28,6 +28,12 @@ strings.en = {
   contactsDetails: "Contact us",
   language: "Lang",
   address: "31-207, ul. Księdza Kazimierza Siemaszki, Krakow, Poland",
+  showModal: "send a request",
+  fillForm: "Please fill out the application",
+  enterName: "Enter your name:",
+  enterTel: "Phone number:",
+  enterComments: "Leave comments:",
+  send: "Send",
 };
 
 strings.pl = {
@@ -61,6 +67,12 @@ strings.pl = {
   contactsDetails: "Nasze kontakty",
   language: "Język",
   address: "31-207, ul. Księdza Kazimierza Siemaszki 26/9, Kraków, Polska",
+  showModal: "Prześlij swoją aplikację",
+  fillForm: "wypełnić formularz",
+  enterName: "Wpisz swoje imię:",
+  enterTel: "Numer telefonu:",
+  enterComments: "Zostaw komentarze:",
+  send: "Wysłać",
 };
 
 function getString(lang, key) {
