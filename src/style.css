@@ -220,11 +220,7 @@ h2 {
   outline: none;
   border: none;
   transition: 0.3s ease;
-  clip-path: content-box;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
   overflow: hidden;
   text-align: center;
 }
@@ -262,24 +258,12 @@ h2 {
 .set-btn {
   width: auto;
   height: auto;
-  border-radius: 5px;
   background-image: linear-gradient(315deg, #000000 0%, #27b04b 74%);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  overflow: hidden;
   display: inline;
 }
 
 .set-btn:after {
-  border-radius: 5px;
   background-image: linear-gradient(315deg, #000000 0%, #27b04b 74%);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  overflow: hidden;
 }
 /* drop */
 .dropdown {
