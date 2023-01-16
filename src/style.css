@@ -57,11 +57,12 @@ h2 {
 /* about */
 
 #about {
+  background: black;
   background: linear-gradient(
       rgba(255, 255, 255, 0.4),
       rgba(255, 255, 255, 0.4)
     ),
-    url("./assets/main-photo/uzmanlar-small.png") no-repeat;
+    url("./assets/main-photo/uzmanlar-small-short.png") no-repeat;
   background-size: 100% 100%;
   height: 1100px;
   margin-bottom: 48px;
@@ -212,11 +213,20 @@ h2 {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 20px;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-
+  outline: none;
+  border: none;
   transition: all 0.3s ease;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
   overflow: hidden;
+  text-align: center;
 }
 
 .products__link:after {
@@ -249,6 +259,16 @@ h2 {
 }
 /* link pdf */
 
+.set-btn {
+  width: auto;
+  height: auto;
+  background-image: linear-gradient(315deg, #000000 0%, #27b04b 74%);
+  display: inline;
+}
+
+.set-btn:after {
+  background-image: linear-gradient(315deg, #000000 0%, #27b04b 74%);
+}
 /* drop */
 .dropdown {
   color: gray;
@@ -315,9 +335,9 @@ h2 {
         rgba(255, 255, 255, 0.4),
         rgba(255, 255, 255, 0.4)
       ),
-      url("./assets/main-photo/uzmanlar-mobile2.png") no-repeat;
+      url("./assets/main-photo/uzmanlar-mobile-small.png") no-repeat;
     background-size: 100% 88%;
-    background-position: 100% 108%;
+    background-position: 100% 107%;
     height: 610px;
     margin-bottom: 30px;
   }
@@ -367,6 +387,9 @@ h2 {
     padding: 7px 28px;
   }
 
+  .set-btn {
+    height: auto;
+  }
   .shaped {
     shape-outside: polygon(86% 0, 100% 0, 100% 100%, 27% 100%);
   }

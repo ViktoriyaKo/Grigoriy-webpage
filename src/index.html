@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="borvek"
+      content="MOBILNA WYTACZARKA Z FUNKCJĄ SPAWANIA BM-40, BM-50, BM-60, BM60NC, KIT20, KIT30, KIT 180, KIT 280"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,9 +16,22 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" type="image/x-icon" href="./assets/svg/favicon.png" />
-
     <title>Borvek</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-E7C6M0CQY8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-E7C6M0CQY8");
+    </script>
   </head>
+
   <body>
     <!-- header -->
     <header class="sticky-top">
@@ -24,8 +41,8 @@
             <img
               src="./assets/svg/borwerk.png"
               alt="Logo"
-              width="80"
-              height="20"
+              width="100"
+              height="30"
               class="d-inline-block"
             />
           </a>
@@ -200,6 +217,115 @@
                 class="products__link"
                 >Pobierz prezentację PDF</a
               >
+              <a
+                type="button"
+                class="products__link set-btn text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-translate="showModal"
+              >
+                Uzyskać ofertę
+              </a>
+              <!-- modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2
+                        class="modal-title fs-5 text-uppercase"
+                        data-translate="fillForm"
+                        id="exampleModalLabel"
+                      >
+                        wypełnić formularz
+                      </h2>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form
+                        action="https://formspree.io/f/mqkoaaap"
+                        method="POST"
+                      >
+                        <div class="mb-3">
+                          <label
+                            for="name"
+                            data-translate="enterName"
+                            class="col-form-label"
+                            >Wpisz swoje imię:</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            name="name"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label
+                            for="telephone"
+                            data-translate="enterTel"
+                            class="col-form-label"
+                            >Numer telefonu:</label
+                          >
+                          <input
+                            type="telephone"
+                            class="form-control"
+                            id="name"
+                            name="tel"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="col-form-label"
+                            >Email:</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label
+                            for="message-text"
+                            data-translate="enterComments"
+                            class="col-form-label"
+                          >
+                            Zostaw komentarze:</label
+                          >
+                          <textarea
+                            class="form-control"
+                            id="message-text"
+                            name="message"
+                          ></textarea>
+                        </div>
+                        <button
+                          id="my-form-button"
+                          type="submit"
+                          data-translate="send"
+                          class="btn btn-primary"
+                        >
+                          Wysłać
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- modal -->
             </div>
           </div>
 
@@ -282,6 +408,15 @@
                 class="products__link"
                 >Pobierz prezentację PDF</a
               >
+              <a
+                type="button"
+                class="products__link set-btn text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-translate="showModal"
+              >
+                Uzyskać ofertę
+              </a>
             </div>
           </div>
 
@@ -365,6 +500,15 @@
                 class="products__link"
                 >Pobierz prezentację PDF</a
               >
+              <a
+                type="button"
+                class="products__link set-btn text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-translate="showModal"
+              >
+                Uzyskać ofertę
+              </a>
             </div>
           </div>
         </div>
@@ -402,6 +546,15 @@
                 class="products__link"
                 >Pobierz prezentację PDF</a
               >
+              <a
+                type="button"
+                class="products__link set-btn text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-translate="showModal"
+              >
+                Uzyskać ofertę
+              </a>
             </div>
           </div>
           <!-- product2 -->
@@ -429,6 +582,15 @@
                 class="products__link"
                 >Pobierz prezentację PDF</a
               >
+              <a
+                type="button"
+                class="products__link set-btn text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-translate="showModal"
+              >
+                Uzyskać ofertę
+              </a>
             </div>
           </div>
           <!-- product3 -->
@@ -464,6 +626,15 @@
                 class="products__link"
                 >Pobierz prezentację PDF</a
               >
+              <a
+                type="button"
+                class="products__link set-btn text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-translate="showModal"
+              >
+                Uzyskać ofertę
+              </a>
             </div>
           </div>
           <!-- product4 -->
@@ -499,6 +670,15 @@
                 class="products__link"
                 >Pobierz prezentację PDF</a
               >
+              <a
+                type="button"
+                class="products__link set-btn text-uppercase"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-translate="showModal"
+              >
+                Uzyskać ofertę
+              </a>
             </div>
           </div>
         </div>
@@ -518,20 +698,29 @@
               >borvekeu@gmail.com</a
             >
             <div class="pt-5">
-              <a href="tel:+48536786039"
+              <a href="https://wa.me/+48536786039"
                 ><img
                   src="./assets/svg/icons8-whatsapp-64.png"
                   class="footer__icon"
                   alt="icon"
               /></a>
-              <a href="tel:+48536786039"
+              <a href="https://www.youtube.com/channel/UCy0ZiI5qq9_L0WSCSYjv45w"
                 ><img
-                  src="./assets/svg/icons8-телеграмма-app-64.png"
+                  src="./assets/svg/icons8-youtube.png"
+                  class="footer__icon"
+                  alt="icon"
+              /></a>
+              <a href="https://t.me/+48536786039"
+                ><img
+                  src="./assets/svg/icons8-tg.png"
                   class="footer__icon"
                   alt="icon"
               /></a>
             </div>
             <p>Borvek: Boring & Welding Machine Tools</p>
+            <p data-translate="address" class="px-2">
+              31-207, ul. Księdza Kazimierza Siemaszki 26/9, Kraków, Polska
+            </p>
           </div>
         </div>
       </section>
@@ -547,8 +736,8 @@
           <img
             src="./assets/svg/borwerk.png"
             alt="Logo"
-            width="80"
-            height="20"
+            width="100"
+            height="30"
             class="d-inline-block"
           />
         </a>
