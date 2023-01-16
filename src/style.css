@@ -202,6 +202,7 @@ h2 {
 
 /* link pdf */
 .products__link {
+  z-index: 1;
   font-size: 15px;
   width: 237px;
   color: #fff;
@@ -220,12 +221,11 @@ h2 {
   outline: none;
   border: none;
   transition: all 0.3s ease;
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  overflow: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
-  overflow: hidden;
   text-align: center;
 }
 
@@ -239,11 +239,6 @@ h2 {
   height: 100%;
   background-color: #1fd1f9;
   background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
   overflow: hidden;
   transition: all 0.3s ease;
 }
