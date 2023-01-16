@@ -220,6 +220,7 @@ h2 {
   outline: none;
   border: none;
   transition: 0.3s ease;
+  clip-path: content-box;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
@@ -262,6 +263,11 @@ h2 {
   width: auto;
   height: auto;
   background-image: linear-gradient(315deg, #000000 0%, #27b04b 74%);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  overflow: hidden;
   display: inline;
 }
 
