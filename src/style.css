@@ -211,7 +211,7 @@ h2 {
   padding: 10px 25px;
   background: transparent;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
   position: relative;
   display: inline-block;
   margin-bottom: 20px;
@@ -220,7 +220,6 @@ h2 {
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   border: none;
-  transition: all 0.3s ease;
   overflow: hidden;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -244,7 +243,7 @@ h2 {
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 .products__link:hover {
   background: transparent;
