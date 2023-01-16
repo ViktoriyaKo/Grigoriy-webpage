@@ -202,7 +202,6 @@ h2 {
 
 /* link pdf */
 .products__link {
-  z-index: 1;
   font-size: 15px;
   width: 237px;
   color: #fff;
@@ -220,10 +219,13 @@ h2 {
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
   border: none;
-  touch-action: none;
-  -ms-touch-action: none;
-  text-align: center;
+  transition: 0.3s ease;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
   overflow: hidden;
+  text-align: center;
 }
 
 .products__link:after {
@@ -236,7 +238,6 @@ h2 {
   height: 100%;
   background-color: #1fd1f9;
   background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
-  overflow: hidden;
   transition: 0.3s ease;
 }
 .products__link:hover {
@@ -254,7 +255,6 @@ h2 {
     -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
     inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
-  transition: 0.3s ease;
 }
 /* link pdf */
 
