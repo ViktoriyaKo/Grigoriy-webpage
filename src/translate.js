@@ -118,3 +118,5 @@ function changeFiles(value) {
     }
   });
 }
+
+document.querySelector(".full-screen__video").play();
