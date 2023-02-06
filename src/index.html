@@ -8,10 +8,6 @@
       name="description"
       content="Mobile automatic boring welding machine Borvek for repair metal holes. Weight 28 kg. 2 years warranty. Buy and get training for free. Visit our website."
     />
-    <meta
-      name="keywords"
-      content="BM-40 model machine, BM-50, BM-60, BM60NC, KIT20, KIT30, KIT 180, KIT 280"
-    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -61,34 +57,53 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarText"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
                   data-translate="about"
                   class="nav-link active"
                   aria-current="page"
                   href="#about"
-                  >O nas</a
+                  >About us</a
                 >
               </li>
               <li class="nav-item">
                 <a data-translate="products" class="nav-link" href="#products"
-                  >Produkty</a
+                  >Products</a
                 >
               </li>
               <li class="nav-item">
                 <a data-translate="kits2" class="nav-link" href="#kits"
-                  >Akcesoria</a
+                  >Accessories</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  data-translate="services"
+                  class="nav-link"
+                  href="https://borweld.com/"
+                  >Services</a
                 >
               </li>
               <li class="nav-item">
                 <a data-translate="contacts" class="nav-link" href="#contacts"
-                  >Kontakt</a
+                  >Contact us</a
                 >
               </li>
             </ul>
 
+            <div class="gap-4 contacts-header">
+              <a href="tel:+48536786039" class="d-block nav-link"
+                >+4 853 678 60 39</a
+              >
+              <a href="mailto:borvekeu@gmail.com" class="d-block nav-link"
+                >borvekeu@gmail.com</a
+              >
+            </div>
             <div class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -98,7 +113,7 @@
                 aria-expanded="false"
                 data-translate="language"
               >
-                język
+                Lang
               </a>
               <ul class="dropdown-menu block__lang text-center">
                 <li>
@@ -118,40 +133,35 @@
     <!-- main -->
     <main>
       <section id="about">
-        <div class="wrapper">
-          <!-- <h1>Borvek: Boring & Welding Machine Tools</h1> -->
-          <div class="full-screen">
-            <div class="full-screen__body">
-              <h1 class="full-screen__title rounded-2">
-                Borvek: Boring & Welding Machine Tools
-              </h1>
-            </div>
-            <video
-              preload="auto"
-              autoplay
-              muted
-              loop
-              class="full-screen__video"
+        <div class="container">
+          <div class="wrapper">
+            <h1 class="rounded-2 text-center text-uppercase">
+              Mobile boring welding technologies for holes repair
+            </h1>
+            <a
+              type="button"
+              class="products__link text-uppercase btn-main"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              data-translate="showModal"
             >
-              <source src="./assets/main-photo/video.mp4" />
-            </video>
-          </div>
-          <div class="content">
-            <div class="content__container">
-              <p data-translate="blockText" class="p-2 rounded-2">
-                Firma BORVEK została założona w 2004 roku. Firma produkuje
-                mobilne wytaczarki z funkcją spawania do regeneracji
-                uszkodzonych otworów metalowych metodą wytaczania i spawania na
-                miejscu wypadku. Główną zaletą produktów BORVEK jest serwonapęd,
-                dzięki któremu maszyny nie wymagają serwisowania. Fabryka
-                znajduje się w Turcji, w mieście Antalya. Wszystkie urządzenia
-                posiadają certyfikaty Unii Europejskiej. Klientami firmy są tak
-                znane firmy jak: strong CATERPILLAR, LIIEBHERR, JOHN DEERE,
-                HIDROMEK, DOOSAN. Sprzęt BORVEK sprzedawany jest na 5
-                kontynentach. Wszystkie maszyny objęte są 2-letnią gwarancją!
-              </p>
-            </div>
-            <hr class="hr-shelf" />
+              get an offer
+            </a>
+            <p
+              data-translate="blockText"
+              class="block__text p-2 rounded-2 text-center"
+            >
+              BORVEK was founded in 2004. The company produces mobile boring
+              machines with a welding function for the regeneration of damaged
+              metal holes by boring and welding at the accident site. The main
+              advantage of BORVEK products is the servo drive, thanks to which
+              the machines do not require servicing. The factory is located in
+              Turkey, in the city of Antalya. All devices have European Union
+              certificates. The company's clients include such well-known
+              companies as: CATERPILLAR, LIIEBHERR, JOHN DEERE, HIDROMEK,
+              DOOSAN. BORVEK equipment is sold on 5 continents. All machines are
+              covered by a 2-year warranty!
+            </p>
           </div>
         </div>
       </section>
@@ -159,12 +169,12 @@
       <section id="products">
         <div class="container">
           <h2 data-translate="products" class="text-center main__header-text">
-            Produkty
+            Products
           </h2>
           <!-- product1 -->
           <div class="row p-3 border border-2 products__item">
             <h3 data-translate="productsHeader1" class="products__header">
-              MOBILNA WYTACZARKA Z FUNKCJĄ SPAWANIA <strong>BM-40</strong>
+              <strong>BM-40</strong>
             </h3>
             <div class="col-lg-5">
               <div
@@ -225,19 +235,18 @@
                 data-translate="productsHeaderText1"
                 class="products__header-text"
               >
-                Model BM-40 jest przeznaczony głównie do użytku w warsztatach
-                naprawczych, placach budowy, stoczniach, konserwacji fabrycznej
-                i naprawach. Maszyny serii BM wykonują w 2 razy więcej pracy niż
-                inne maszyny dzięki funkcji szybkiego toczenia. Precyzyjny
-                system sterowania silnikiem serwo 2 lata gwarancji
-                elektronicznej i mechanicznej. Regulowany system napinania
-                łańcucha
+                BM-40 model is mostly designed to be used in repair maintenance
+                workshops, construction sites, shipyards, factory maintenance
+                and repair. BM series machines do 2 times more work than other
+                machines with their high speed turning feature. Precise speed
+                servo motor control system 2 years electronic and mechanical
+                warranty.
               </p>
               <a
-                href="./catalogs/pl/BM40_ekatalog.pdf"
+                href="./catalogs/en/BM40_ekatalog.pdf"
                 data-translate="presentation"
                 class="products__link"
-                >Pobierz prezentację PDF</a
+                >Download PDF presentation</a
               >
               <a
                 type="button"
@@ -246,7 +255,7 @@
                 data-bs-target="#exampleModal"
                 data-translate="showModal"
               >
-                Uzyskać ofertę
+                get an offer
               </a>
               <!-- modal -->
               <div
@@ -264,7 +273,7 @@
                         data-translate="fillForm"
                         id="exampleModalLabel"
                       >
-                        wypełnić formularz
+                        Please fill out the application
                       </h2>
                       <button
                         type="button"
@@ -283,7 +292,7 @@
                             for="name"
                             data-translate="enterName"
                             class="col-form-label"
-                            >Wpisz swoje imię:</label
+                            >Enter your name:</label
                           >
                           <input
                             type="text"
@@ -298,7 +307,7 @@
                             for="telephone"
                             data-translate="enterTel"
                             class="col-form-label"
-                            >Numer telefonu:</label
+                            >Phone number:</label
                           >
                           <input
                             type="telephone"
@@ -325,7 +334,7 @@
                             data-translate="enterComments"
                             class="col-form-label"
                           >
-                            Zostaw komentarze:</label
+                            Leave comments:</label
                           >
                           <textarea
                             class="form-control"
@@ -339,7 +348,7 @@
                           data-translate="send"
                           class="btn btn-primary"
                         >
-                          Wysłać
+                          Send
                         </button>
                       </form>
                     </div>
@@ -354,7 +363,7 @@
           <!-- product-2 -->
           <div class="row p-3 border border-2 products__item bg-even-item">
             <h3 data-translate="productsHeader2" class="products__header">
-              MOBILNA WYTACZARKA Z FUNKCJĄ SPAWANIA <strong>BM-50</strong>
+              <strong>BM-50</strong>
             </h3>
             <div class="col-lg-5">
               <div
@@ -415,20 +424,20 @@
                 data-translate="productsHeaderText2"
                 class="products__header-text"
               >
-                Nasza maszyna Model BM50 zmniejsza wibracje podczas pracy dzięki
-                średnicy wału wytaczającego 50 mm. wyższa wydajność usuwania
-                wiórów pozwala na użycie mniejszej liczby łożysk nośnych. Jest
-                przeznaczony do pracy w średnio ciężkich warunkach. Maszyny
-                serii BM wykonują 2 razy więcej pracy niż inne maszyny ze
-                względu na dużą prędkość. Precyzyjny system sterowania silnikiem
-                serwo 2 lata gwarancji elektronicznej i mechanicznej. Regulowany
-                system napinania łańcucha.
+                Our BM50 model machine reduces vibrations during operation due
+                to its busbar shaft diameter of 50mm. The chip removal
+                efficiency is higher allows the use of less rolling bearings. It
+                is designed to work in medium heavy conditions. BM series
+                machines do 2 times more work than other machines with their
+                high speed turning feature. Precise speed servo motor control
+                system 2 years electronic and mechanical warranty. Adjustable
+                chain tensioning system.
               </p>
               <a
-                href="./catalogs/pl/BM50_ekatalog.pdf"
+                href="./catalogs/en/BM50_ekatalog.pdf"
                 data-translate="presentation"
                 class="products__link"
-                >Pobierz prezentację PDF</a
+                >Download PDF presentation</a
               >
               <a
                 type="button"
@@ -437,7 +446,7 @@
                 data-bs-target="#exampleModal"
                 data-translate="showModal"
               >
-                Uzyskać ofertę
+                get an offer
               </a>
             </div>
           </div>
@@ -445,7 +454,7 @@
           <!-- product3 -->
           <div class="row p-3 border border-2 products__item">
             <h3 data-translate="productsHeader3" class="products__header">
-              MOBILNA WYTACZARKA Z FUNKCJĄ SPAWANIA <strong>BM-60</strong>
+              <strong>BM-60</strong>
             </h3>
             <div class="col-lg-5">
               <div
@@ -506,21 +515,22 @@
                 data-translate="productsHeaderText3"
                 class="products__header-text"
               >
-                Sektory, w których wykorzystywane są nasze maszyny BM60NC to:
-                stocznie, przemysł ciężki, sprzęt do robót ziemnych, energetyka
-                petrochemiczna, górnictwo. Wibracje są bardzo niskie, ponieważ
-                średnica wału wytaczającego wynosi 60 mm. nadaje się do
-                szybkiego wytaczania. Odległość między łożyskami wynosi 1200 mm.
-                w pracy zwykle stosuje się 2 zaciski łożyskowe. Dzięki
-                niewielkim rozmiarom i niewielkiej wadze maszyna jest bardzo
-                szybka i łatwa w montażu. Ten model jest wielofunkcyjny.
-                Gwarancja na nasze maszyny wynosi 24 miesiące.
+                The sectors where our BM60NC Machines are used: Shipyards, Heavy
+                Industry Sectors, Excavation Equipment, Petrochemical Energy,
+                Mining. Vibration is very low due to the fact that the busbar
+                shaft is 60mm. It is suitable for fast cutting. The distance
+                between the bearings is 1200 mm. It is suitable for working with
+                2 rolling bearings. Thanks to its small dimensions and low
+                weight, it is very quick and easy to install. You will have
+                multiple functions with just one machine. Our machines are
+                guaranteed for 24 months. It is possible to operate with digital
+                and analog buttons.
               </p>
               <a
-                href="./catalogs/pl/BM60_ekatalog.pdf"
+                href="./catalogs/en/BM60_ekatalog.pdf"
                 data-translate="presentation"
                 class="products__link"
-                >Pobierz prezentację PDF</a
+                >Download PDF presentation</a
               >
               <a
                 type="button"
@@ -529,7 +539,7 @@
                 data-bs-target="#exampleModal"
                 data-translate="showModal"
               >
-                Uzyskać ofertę
+                get an offer
               </a>
             </div>
           </div>
@@ -539,7 +549,7 @@
       <section id="kits">
         <div class="kits__block">
           <h2 data-translate="kits1" class="text-center kits__header">
-            Akcesoria/Kity
+            Accessories/KIT
           </h2>
         </div>
         <div class="container">
@@ -560,13 +570,13 @@
                 data-translate="productsHeaderText4"
                 class="products__header-text"
               >
-                Przeznaczone do wytaczania otworów o średnicy od 22 do 42 mm
+                Designed for boring holes from 22 to 42 mm
               </p>
               <a
-                href="./catalogs/pl/20.pdf"
+                href="./catalogs/en/20.pdf"
                 data-translate="presentation"
                 class="products__link"
-                >Pobierz prezentację PDF</a
+                >Download PDF presentation</a
               >
               <a
                 type="button"
@@ -575,7 +585,7 @@
                 data-bs-target="#exampleModal"
                 data-translate="showModal"
               >
-                Uzyskać ofertę
+                get an offer
               </a>
             </div>
           </div>
@@ -596,13 +606,13 @@
                 data-translate="productsHeaderText5"
                 class="products__header-text"
               >
-                Przeznaczone do wytaczania otworów o średnicy od 32 do 52 mm
+                Designed for boring holes from 32 to 52 mm
               </p>
               <a
-                href="./catalogs/pl/30.pdf"
+                href="./catalogs/en/30.pdf"
                 data-translate="presentation"
                 class="products__link"
-                >Pobierz prezentację PDF</a
+                >Download PDF presentation</a
               >
               <a
                 type="button"
@@ -611,14 +621,14 @@
                 data-bs-target="#exampleModal"
                 data-translate="showModal"
               >
-                Uzyskać ofertę
+                get an offer
               </a>
             </div>
           </div>
           <!-- product3 -->
           <div class="row border border-2 products__item">
             <h3 data-translate="productsHeader6" class="products__header">
-              <strong>KIT 180 DO OBRÓBKI PŁASZCZYZN</strong>
+              <strong>KIT 180</strong>
             </h3>
             <div class="col-md-5 p-3">
               <div class="kits__img-wrapper">
@@ -634,19 +644,18 @@
                 data-translate="productsHeaderText6"
                 class="products__header-text"
               >
-                Zestaw został zaprojektowany tak, aby zapewnić większą
-                wszechstronność zastosowania przenośnych wytaczarek serii BM
-                (Boring Mashine). Składa się z głowicy czołowej, która umożliwia
-                wykonywanie operacji toczenia w płaszczyznach ortogonalnych i
-                tworzenie gniazd dla pierścieni blokujących i O-ringów przy
-                użyciu standardowych krawędzi tnących o średnicy od 48 mm do 400
-                mm
+                The kit has been designed to give great versatility of use to
+                the portable boring machines of the BM (Boring Machine) series.
+                It consists of a facing head allowing turning operations on
+                orthogonal planes and the creation of seats for seeger circlips
+                and o-rings, by using standard cutting-edges from diameter 48mm
+                to 400 mm
               </p>
               <a
-                href="./catalogs/pl/KIT180_ekatalog.pdf"
+                href="./catalogs/en/KIT180_ekatalog.pdf"
                 data-translate="presentation"
                 class="products__link"
-                >Pobierz prezentację PDF</a
+                >Download PDF presentation</a
               >
               <a
                 type="button"
@@ -655,14 +664,14 @@
                 data-bs-target="#exampleModal"
                 data-translate="showModal"
               >
-                Uzyskać ofertę
+                get an offer
               </a>
             </div>
           </div>
           <!-- product4 -->
           <div class="row border border-2 products__item bg-even-item">
             <h3 data-translate="productsHeader7" class="products__header">
-              <strong>ZESTAW 280 DO OBRÓBKI PŁASZCZYZN</strong>
+              <strong>ZESTAW 280</strong>
             </h3>
             <div class="col-md-5 p-3">
               <div class="kits__img-wrapper">
@@ -678,19 +687,18 @@
                 data-translate="productsHeaderText7"
                 class="products__header-text"
               >
-                Zestaw został zaprojektowany tak, aby zapewnić większą
-                wszechstronność zastosowania przenośnych wytaczarek serii BM
-                (Boring Mashine). Składa się z głowicy czołowej, która umożliwia
-                wykonywanie operacji toczenia w płaszczyznach ortogonalnych i
-                tworzenie gniazd dla pierścieni blokujących i O-ringów przy
-                użyciu standardowych krawędzi tnących o średnicy od 48 mm do 600
-                mm
+                The kit has been designed to give great versatility of use to
+                the portable boring machines of the BM (Boring Machine) series.
+                It consists of a facing head allowing turning operations on
+                orthogonal planes and the creation of seats for seeger circlips
+                and o-rings, by using standard cutting-edges from diameter 48mm
+                to 600 mm
               </p>
               <a
-                href="./catalogs/pl/KIT280_ekatalog.pdf"
+                href="./catalogs/en/KIT280_ekatalog.pdf"
                 data-translate="presentation"
                 class="products__link"
-                >Pobierz prezentację PDF</a
+                >Download PDF presentation</a
               >
               <a
                 type="button"
@@ -699,7 +707,7 @@
                 data-bs-target="#exampleModal"
                 data-translate="showModal"
               >
-                Uzyskać ofertę
+                get an offer
               </a>
             </div>
           </div>
@@ -709,7 +717,7 @@
       <!-- contacts -->
       <section id="contacts">
         <h2 data-translate="contactsDetails" class="text-center p-5">
-          Nasze kontakty
+          Contact us
         </h2>
         <div class="contacts__block">
           <div class="text-center fs-2">
@@ -741,7 +749,7 @@
             </div>
             <p>Borvek: Boring & Welding Machine Tools</p>
             <p data-translate="address" class="px-2">
-              31-207, ul. Księdza Kazimierza Siemaszki 26/9, Kraków, Polska
+              31-207, ul. Księdza Kazimierza Siemaszki, Krakow, Poland
             </p>
           </div>
         </div>
@@ -770,7 +778,7 @@
               data-translate="about"
               href="#about"
               class="nav-link px-2 text-muted"
-              >O nas</a
+              >About us</a
             >
           </li>
           <li class="nav-item">
@@ -778,7 +786,7 @@
               data-translate="products"
               href="#products"
               class="nav-link px-2 text-muted"
-              >Produkty</a
+              >Products</a
             >
           </li>
           <li class="nav-item">
@@ -786,7 +794,7 @@
               data-translate="kits2"
               href="#kits"
               class="nav-link px-2 text-muted"
-              >Akcesoria</a
+              >Accessories</a
             >
           </li>
           <li class="nav-item">
@@ -794,7 +802,7 @@
               data-translate="contacts"
               href="#contacts"
               class="nav-link px-2 text-muted"
-              >Kontakt</a
+              >Contact us</a
             >
           </li>
         </ul>

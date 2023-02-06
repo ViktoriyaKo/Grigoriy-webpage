@@ -6,6 +6,7 @@ strings.en = {
   products: "Products",
   kits1: "Accessories/KIT",
   kits2: "Accessories",
+  services: "Services",
   contacts: "Contact us",
   productsHeader1: "BM-40",
   productsHeaderText1:
@@ -43,6 +44,7 @@ strings.pl = {
   products: "Produkty",
   kits1: "Akcesoria/Kity",
   kits2: "Akcesoria",
+  services: "Usługi",
   contacts: "Kontakt",
   productsHeader1: "MOBILNA WYTACZARKA Z FUNKCJĄ SPAWANIA BM-40",
   productsHeaderText1:
