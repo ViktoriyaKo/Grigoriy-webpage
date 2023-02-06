@@ -56,12 +56,61 @@ h2 {
 
 /* about */
 
+#about {
+  background: linear-gradient(#1f39a07e, rgba(255, 255, 255, 0.4)),
+    url("./assets/main-photo/main-bw.jpg") no-repeat;
+  background-size: 100% 100%;
+  height: 720px;
+  margin-bottom: 40px;
+}
+
+.block__text {
+  color: white;
+  font-size: 22px;
+  background: #0000005b;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.wrapper {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper h1 {
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: white;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  background: #0000005b;
+  padding: 30px;
+  letter-spacing: 6px;
+}
+
+.contacts-header {
+  font-weight: 700;
+  display: flex;
+  color: #0086c1;
+  transition: 0.5s;
+}
+
+.contacts-header a:hover {
+  color: var(--text-product-color);
+  transition: 0.5s;
+}
+
 /* products */
 
 .main__header-text {
   padding: 20px;
   margin-bottom: 40px;
 }
+
+.nav-link {
+  font-size: 20px;
+}
+
 .carousel-item {
   overflow: hidden;
 }
@@ -241,83 +290,38 @@ h2 {
   transition: 0.5s;
 }
 
-/* VIDEO */
-
-.wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.btn-main {
+  margin-bottom: 40px;
+  background-image: linear-gradient(315deg, #000000 0%, #7b27b0 74%);
 }
 
-.full-screen {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-.full-screen__body {
-  padding: 50px 15px;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex: 1 1 auto;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-transform: uppercase;
-}
-.full-screen__title {
-  color: white;
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-  background: #0000003c;
-  padding: 30px;
-  text-align: center;
-  width: 100%;
-  letter-spacing: 10px;
-}
-.full-screen__text {
-  font-size: 18px;
-  letter-spacing: 15px;
-}
-.full-screen__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.content {
-  position: relative;
-  z-index: 5;
-}
-.content__container {
-  text-align: center;
-  max-width: 1200px;
-  margin: 0px auto;
-  padding: 50px 15px;
-  font-size: 20px;
-  text-shadow: rgb(0 0 255) 1px 0 1px;
-}
-.content__container p {
-  margin: 0px 0px 20px 0px;
-  text-shadow: rgb(0 0 255) 2px 0px 3px;
+.btn-main:hover {
+  background-image: linear-gradient(315deg, #000000 0%, #7b27b0 74%);
 }
 
-.hr-shelf {
-  margin: -30px auto 10px;
-  padding: 0;
-  height: 50px;
-  border: none;
-  border-bottom: 1px solid #1423a5;
-  box-shadow: 0 20px 20px -20px rgba(51, 51, 51, 0.523);
-  width: 95%;
+@media (max-width: 1100px) {
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .wrapper h1 {
+    font-size: 30px;
+  }
+
+  .block__text {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 1000px) {
   .carousel {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 993px) {
+  .contacts-header {
+    display: none;
   }
 }
 
@@ -337,11 +341,24 @@ h2 {
   .kits__img-wrapper {
     text-align: center;
   }
+
+  .wrapper h1 {
+    font-size: 25px;
+  }
+
+  .block__text {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 740px) {
   .block__text {
     font-size: 16px;
+  }
+
+  #about {
+    background-size: 134% 100%;
+    background-position: 100% 100%;
   }
 }
 
@@ -365,24 +382,11 @@ h2 {
     padding: 0;
   }
 
-  .full-screen {
-    min-height: 70vh;
-  }
-
-  .content__container {
-    padding: 20px 15px;
-    font-size: 16px;
-  }
-
-  .full-screen__title {
-    padding: 15px;
-    font-size: 25px;
-  }
-
   .products__link {
     font-size: 14px;
     height: 32px;
     padding: 7px 28px;
+    width: 100%;
   }
 
   .set-btn {
@@ -421,6 +425,14 @@ h2 {
     width: 35px;
     height: 35px;
   }
+
+  .btn-main {
+    width: 200px;
+  }
+  #about {
+    background-size: 188% 100%;
+    background-position: 98% 100%;
+  }
 }
 
 @media (max-width: 400px) {
@@ -428,9 +440,9 @@ h2 {
     max-width: 230px;
   }
 
-  .content__container {
-    padding: 10px 15px;
-    font-size: 13px;
+  #about {
+    background-size: 234% 100%;
+    background-position: 100% 100%;
   }
 
   .products__header {
@@ -444,5 +456,14 @@ h2 {
 
   .carousel-item-img {
     height: 220px;
+  }
+
+  .wrapper h1 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .block__text {
+    font-size: 13px;
   }
 }
