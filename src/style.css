@@ -389,9 +389,6 @@ h2 {
     width: 100%;
   }
 
-  .set-btn {
-    height: auto;
-  }
   .products__header {
     margin-bottom: 15px;
   }
@@ -417,6 +414,7 @@ h2 {
   .kits__header {
     font-size: 25px;
   }
+
   #contacts h2 {
     font-size: 30px;
   }
@@ -432,6 +430,11 @@ h2 {
   #about {
     background-size: 188% 100%;
     background-position: 98% 100%;
+  }
+
+  .set-btn {
+    height: auto;
+    width: 100%;
   }
 }
 
