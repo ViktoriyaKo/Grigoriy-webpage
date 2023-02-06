@@ -263,7 +263,6 @@ h2 {
 /* set */
 .set-btn {
   width: auto;
-  height: auto;
   display: inline;
   background-image: linear-gradient(315deg, #000000 0%, #27b04b 74%);
 }
@@ -362,6 +361,13 @@ h2 {
   }
 }
 
+@media (max-width: 540px) {
+  .products__link,
+  .set-btn {
+    width: 100%;
+  }
+}
+
 @media (max-width: 640px) {
   .products__link:hover:after {
     -webkit-transform: none;
@@ -386,7 +392,6 @@ h2 {
     font-size: 14px;
     height: 32px;
     padding: 7px 28px;
-    width: 100%;
   }
 
   .products__header {
@@ -430,11 +435,6 @@ h2 {
   #about {
     background-size: 188% 100%;
     background-position: 98% 100%;
-  }
-
-  .set-btn {
-    height: auto;
-    width: 100%;
   }
 }
 
